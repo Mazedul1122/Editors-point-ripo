@@ -7,12 +7,281 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editors Point</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+        body {
+            background-color: rgb(230, 230, 230);
+            color: hsl(0, 0%, 6%);
+            line-height: 150%;
+            margin: 0;
+            overscroll-behavior: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* header css start */
+        .container {
+            background-color: #FFFF;
+            width: 1200px;
+            height: 2500px;
+            margin-left: 70px;
+        }
+
+        .top-header {
+            display: flex;
+            justify-content: end;
+            padding-top: 30px;
+            padding-right: 30px;
+        }
+
+        a {
+            margin-top: 50px;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            margin-left: 30px;
+
+        }
+
+        /* header css end -----
+  -----------------------*/
+
+        /* mid-part start -----
+--------------------*/
+        .mid-part {
+            display: flex;
+        }
+
+        .title-1 {
+            font-size: 2.5em;
+        }
+
+        #first-title {
+            margin-left: 50px;
+        }
+
+        #second-title {
+            color: orange;
+            font-size: 3em;
+        }
+
+        .editor-text {
+            height: 50%;
+            width: 50%;
+            margin-left: 40px;
+            padding: 20px;
+        }
+
+        .photo-1 {
+            margin-left: 50px;
+            margin-right: 70px;
+            border-radius: 100px;
+            background-color: rgb(223, 235, 199);
+        }
+
+        .photo-1 img {
+            width: 90%;
+        }
+
+        .Joining-button {
+            margin-top: 50px;
+            background-color: orange;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 20px;
+            color: whitesmoke;
+
+        }
+
+        /* Company Logo start----------
+------------------------- */
+        .company {
+            display: flex;
+            align-items: center;
+            margin-top: 70px;
+            margin-left: 30px;
+        }
+
+        .company img {
+            width: 120px;
+        }
+
+        #goolu-goolu {
+            width: 200px;
+            margin-top: 60px;
+        }
+
+        #alibaba img {
+            width: 100px;
+        }
+
+        /* Company Logo- finish---------
+------------------------- */
+        .last-part {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 60px;
+        }
+
+        .sites {
+            background-color: rgb(245, 235, 220);
+            margin: 20px 20px 20px 20px;
+            border-radius: 20px;
+        }
+
+        .sites img {
+            width: 80%;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
     </style>
 </head>
 
 <body>
-    <h2> Welcome to my new Repository</h2>
+    <section class="container">
+        <header>
+            <nav class="top-header">
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Survices</a>
+                <a href="">Sign In</a>
+            </nav>
+            <h1 id="first-title">
+                Editors World
+            </h1>
+        </header>
+        <main class="mid-part">
+            <div class="editor-text">
+                <h1 id="second-title" class="title-1">
+                    Start Your Journey
+                </h1>
+                <h1 class="title-1">
+                    As a Photo Editor.
+                </h1>
+                <p>
+                    Nowadays, Every body have a social media profile. So in every profile have to need a smart
+                    photographer
+                    and editor. It is so much essantial in every part of our life.
+                </p>
+                <a class="Joining-button" href="https://web.facebook.com/profile.php?id=100009314410965">Joining us </a>
+            </div>
+            <div class="photo-1">
+                <img src="images/main-camera.png" alt="">
+            </div>
+        </main>
+
+        <!---------------- Company Logo start ---------
+        -------------------------------
+    -------------------------------- -->
+        <div class="company">
+            <a href="https://web.facebook.com/?_rdc=1&_rdr">
+                <div class="image"><img src="new-photo/download-1.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.whatsapp.com/">
+                <div class="image"><img src="new-photo/download-2.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.apple.com/">
+                <div class="image"><img src="new-photo/download-3.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.google.com/?hl=bn">
+                <div id="goolu-goolu" class="image"><img src="new-photo/download-4.png" alt="">
+                </div>
+            </a>
+            <a
+                href="https://www.alibaba.com/?src=sem_ggl&from=sem_ggl&cmpgn=9922923046&adgrp=97780319022&fditm=&tgt=kwd-14739453&locintrst=&locphyscl=9069476&mtchtyp=e&ntwrk=g&device=c&dvcmdl=&creative=432272607736&plcmnt=&plcmntcat=&p1=&p2=&aceid=&position=&localKeyword=alibaba&gclid=CjwKCAiA0KmPBhBqEiwAJqKK44IvtPPnGqP4JJFRO1IiZoG0s15eYcEs12RsXcCRyjAyZ-rWr_5tzhoCxw8QAvD_BwE">
+                <div id="alibaba" class="image"><img src="new-photo/unnamed.jpg" alt="">
+                </div>
+            </a>
+
+        </div>
+        <!---------------- Company Logo end---------
+        -------------------------------
+    -------------------------------- -->
+        <div class="last-part">
+            <div class="sites">
+                <img src="images/action.png" alt="">
+                <h2>Action Camera</h2>
+                <h3>$380.00</h3>
+                <p>Wordwide shifting
+                    available
+                    Buyers protection possible!</p>
+            </div>
+            <div class="sites">
+                <img src="images/airpod.png" alt="">
+                <h2>Awesome Airpod</h2>
+                <h3>$380.00</h3>
+                <p>Wordwide shifting
+                    available
+                    Buyers protection possible!</p>
+            </div>
+            <div class="sites">
+                <img src="images/drone.png" alt="">
+                <h2>Spacial Drone</h2>
+                <h3>$1380.00</h3>
+                <p>Wordwide shifting
+                    available
+                    Buyers protection possible!</p>
+            </div>
+            <div class="sites">
+                <img src="images/gear.png" alt="">
+                <h2>Full Gearset</h2>
+                <h3>$1250.00</h3>
+                <p>Wordwide shifting
+                    available
+                    Buyers protection possible!</p>
+            </div>
+            <div class="sites">
+                <img src="images/lights.png" alt="">
+                <h2>Lighting Setup</h2>
+                <h3>$500.00</h3>
+                <p>Wordwide shifting
+                    available
+                    Buyers protection possible!</p>
+            </div>
+            <div class="sites">
+                <img src="images/tripod.png" alt="">
+                <h2>Spacial Tripod</h2>
+                <h3>$680.00</h3>
+                <p>Wordwide shifting
+                    available
+                    Buyers protection possible!</p>
+            </div>
+            <div class="sites">
+                <img src="images/mic.png" alt="">
+                <h2>Recorder Mic</h2>
+                <h3>$700.00</h3>
+                <p>Wordwide shifting
+                    available
+                    Buyers protection possible!</p>
+            </div>
+            <div class="sites">
+                <img src="images/setup.png" alt="">
+                <h2>Camera Setup</h2>
+                <h3>$3380.00</h3>
+                <p>Wordwide shifting
+                    available
+                    Buyers protection possible for buy now!</p>
+            </div>
+            <div class="sites">
+                <img src="images/single-light.png" alt="">
+                <h2>Single Lighting</h2>
+                <h3>$580.00</h3>
+                <p> This Product is Wordwide shifting
+                    available
+                    protection possible!</p>
+            </div>
+        </div>
+        <div class="footer">
+            <h2>Editors Pictures</h2>
+            <p> Working harrd is key to success</p>
+            <h3>Mission 2022-2023</h3>
+        </div>
+    </section>
+
 </body>
 
 </html>
